@@ -18,7 +18,7 @@ function Routing() {
         <Routes>
             <Route path="/" element={<Landing />}/>
             <Route path="/auth" element={<Auth />} />
-            <Route path="/payment" element={
+            <Route path="/payments" element={
 
               <ProtectedRoute 
               msg={"you must login to pay"} 

@@ -68,7 +68,7 @@ const decrement =(id)=>{
             <input type='checkbox'/>
             <small>This order contains a gift</small>
           </span>
-         <Link to ="/payment">Continue to chackout</Link>
+         <Link to ="/payments">Continue to chackout</Link>
         </div>
           )}
       </section>
