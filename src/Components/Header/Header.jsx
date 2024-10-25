@@ -12,7 +12,7 @@ import {auth} from "../../Utility/firebase"
 
 
 const Header = () => {
-  const [{user, basket},dispatch] = useContext(DataContext)
+  const [{user, basket}] = useContext(DataContext)
   // console.log(basket.length);
   const totalItem = basket?.reduce((amount,item)=>{
     return item.amount + amount
@@ -53,7 +53,7 @@ const Header = () => {
          </Link>
         <Link to={!user && '/auth'}>
         <div>
-            {user ? (
+            {user? (
               <>
               <p>Hello {user ?.email?.split("@")[0]}</p>
               <span onClick={()=>auth.signOut()}>Sign Out</span>
