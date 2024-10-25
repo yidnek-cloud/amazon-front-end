@@ -1,0 +1,13 @@
+.container {
+    background-color: #efeeee;
+    padding: 30px;
+}
+
+.Orders__container{
+    background-color: #fff;
+    padding: 20px;
+}
+.Orders__container h2 {
+    border-bottom: 2px solid var(--primary-shade);
+    padding: 20px;
+}
